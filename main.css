@@ -31,7 +31,7 @@ html,  body,  div,  span,  applet,  object,  iframe,  h1,  h2,  h3,  h4,  h5,  h
 	position:absolute;
 	width:65px;
 	height:65px;
-	background:url(test/images/ic1.png) no-repeat scroll 0 0 transparent;
+	background:url(ic1.png) no-repeat scroll 0 0 transparent;
 	left:-15px;
 	top:-48px;
 }
