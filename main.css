@@ -1,0 +1,114 @@
+html,  body,  div,  span,  applet,  object,  iframe,  h1,  h2,  h3,  h4,  h5,  h6,  p,  blockquote,  pre,  a,  abbr,  acronym,  address,  big,  cite,  code,  del,  dfn,  em,  img,  ins,  kbd,  q,  s,  samp,  small,  strike,  sub,  tt,  var,  u,  center,  dl,  dt,  dd,  ol,  ul,  li,  fieldset,  form,  label
+,  legend,  table,  caption,  tbody,  tfoot,  thead,  tr,  th,  td,  article,  aside,  canvas,  details,  embed,  figure,  figcaption,  footer,  header,  hgroup,  menu,  nav,  output,  ruby,  section,  summary,  time,  mark,  audio,  video  {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  outline: none;
+}
+.wrapper{	
+	margin:0 auto;
+	max-width:700px;
+}
+.news{
+	background:#ededed;
+	padding:0 30px 30px;
+}
+.news__title{
+	position:relative;
+	font-family: 'PT Serif', serif;
+	font-size:19px;
+	color:#445c92;
+	line-height:24px;
+	font-weight:700;
+	text-align:center;
+	padding:30px 0 20px;
+}
+.news__title:before{
+	content:"";
+	position:absolute;
+	width:65px;
+	height:65px;
+	background:url(images/ic1.png) no-repeat scroll 0 0 transparent;
+	left:-15px;
+	top:-48px;
+}
+.news__title:after{
+	content:"";
+	position:absolute;
+	left:50%;
+	border:15px solid transparent;
+	border-top:15px solid #fff;
+	width:0;
+	height:0;
+	top:0;
+}
+.news__body{
+	font-family: 'PT Serif', serif;
+	font-size:18px;
+	color:#445c92;
+	line-height:21px;
+}
+.news__body p{
+	padding-bottom:10px;
+}
+.news__body ul{
+	list-style-position:inside;
+}
+.news__body ul li{
+	margin-bottom:10px;
+}
+.news__body sup{
+	font-size:10px;
+	line-height:10px;
+}
+.news__body .red{
+	font-weight:700;
+	color:#a01918
+}
+.footer{
+	background:#94c11f;
+	padding:30px 0 30px;
+	display:flex;
+	flex-direction:row;
+	justify-content: space-between;
+}
+.social__box{
+	padding:0 30px;
+}
+.social__box a{
+	margin:0 10px;
+}
+.contacts{
+	font-family: 'PT Sans', sans-serif;
+	font-weight:bold;
+	font-size:20px;
+	padding:0 30px;
+}
+.contacts a{
+	text-decoration:none;
+	color:#fff;
+}
+@media only screen and (max-width:500px) {
+	.footer{
+		flex-direction:column;
+	}
+	.social__box {
+		text-align:center;
+		padding-bottom:20px;
+	}
+	.contacts{
+		text-align:center;
+	}
+	.news__title:before{
+		background-size:cover;
+		width:45px;
+		height:45px;
+		top:-30px;
+	}
+	.news__title:after{
+		 left: calc(50% - 10px)
+	}
+}
